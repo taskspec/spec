@@ -1,4 +1,4 @@
-# todo-spec
+# taskspec
 
 ## A Universal TODO Annotation Format Specification
 
@@ -21,7 +21,7 @@ This inconsistency means:
 
 ---
 
-## The Solution: todo.spec
+## The Solution: taskspec
 
 A lightweight, universal format that works inline anywhere text exists:
 
@@ -57,7 +57,7 @@ Works in any text context:
 - Configuration files
 
 ### 4. **Graceful Degradation**
-A todo.spec annotation is still a valid, readable TODO even in tools that don't understand the format. The metadata enhances but doesn't obscure.
+A taskspec annotation is still a valid, readable TODO even in tools that don't understand the format. The metadata enhances but doesn't obscure.
 
 ### 5. **Optional Everything**
 Every metadata field is optional. A simple `// TODO: Fix bug` is valid. Metadata can be added incrementally as needed.
@@ -75,7 +75,7 @@ Where possible, align with existing standards:
 ### Basic Structure
 
 ```
-TODO: <description> [metadata...]
+<description> [metadata...]
 ```
 
 Metadata fields can appear in any order after the description.
@@ -237,16 +237,16 @@ TODO: Add caching layer 📅 2026-02-15 🔼 #performance
 ## Integration Possibilities
 
 ### IDE/Editor Plugins
-- Syntax highlighting for todo.spec metadata
+- Syntax highlighting for taskspec metadata
 - Inline date pickers and priority selectors
 - TODO panel with filtering and sorting
 - Jump-to-definition for referenced issues
 
 ### CLI Tools
-- `todospec list` – List all TODOs in a project
-- `todospec lint` – Validate TODO format
-- `todospec sync` – Sync with external tools (Linear, Jira, GitHub Issues)
-- `todospec report` – Generate TODO reports
+- `taskspec list` – List all TODOs in a project
+- `taskspec lint` – Validate TODO format
+- `taskspec sync` – Sync with external tools (Linear, Jira, GitHub Issues)
+- `taskspec report` – Generate TODO reports
 
 ### CI/CD Integration
 - Fail builds on overdue high-priority TODOs
@@ -264,24 +264,24 @@ TODO: Add caching layer 📅 2026-02-15 🔼 #performance
 ## Relationship to Existing Standards
 
 ### todo.txt
-The original plain-text TODO format. todo.spec extends similar concepts but:
+The original plain-text TODO format. taskspec extends similar concepts but:
 - Works inline in any text (not just dedicated files)
 - Adds emoji syntax for visual clarity
 - Includes more metadata fields (recurrence, estimates, etc.)
 
 ### GitHub Flavored Markdown (GFM)
-GFM defines `- [ ]` task list syntax. todo.spec:
+GFM defines `- [ ]` task list syntax. taskspec:
 - Builds on top of GFM task lists
 - Adds structured metadata after the description
 
 ### iCalendar / RFC 5545
-The VTODO component defines task properties. todo.spec:
+The VTODO component defines task properties. taskspec:
 - Draws inspiration from VTODO fields (PRIORITY, DUE, RRULE)
 - Uses simplified, human-readable syntax
 - Designed for inline annotation, not standalone files
 
 ### Obsidian Tasks Plugin
-Popular Markdown task format using emojis. todo.spec:
+Popular Markdown task format using emojis. taskspec:
 - Adopts similar emoji conventions where sensible
 - Extends to work in source code comments
 - Provides text-only alternative syntax

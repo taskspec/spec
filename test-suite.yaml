@@ -1,7 +1,7 @@
-# todo-spec Test Suite
+# taskspec Test Suite
 # Version 0.1.0-draft
 
-# This file contains a set of test cases to verify the correctness of a todo-spec parser
+# This file contains a set of test cases to verify the correctness of a taskspec parser
 # based on the ABNF grammar.
 
 # ------------------------------------------------------------------------------

@@ -1,8 +1,8 @@
-# todo-spec: A Universal TODO Annotation Format
+# taskspec: A Universal TODO Annotation Format
 
 ## 1. Introduction
 
-`todo-spec` provides a universal, human-readable, and machine-parseable format for annotating TODOs in any text-based environment. This specification standardizes the syntax for capturing metadata such as due dates, assignees, priority, and recurrence within a TODO comment or task item.
+`taskspec` provides a universal, human-readable, and machine-parseable format for annotating TODOs in any text-based environment. This specification standardizes the syntax for capturing metadata such as due dates, assignees, priority, and recurrence within a TODO comment or task item.
 
 ### 1.1. Design Principles
 
@@ -17,7 +17,7 @@
 
 ### 2.1. Basic Structure
 
-A `todo-spec` annotation consists of a keyword, a description, and optional metadata fields.
+A `taskspec` annotation consists of a keyword, a description, and optional metadata fields.
 
 ```
 <KEYWORD>: <description> [metadata...]
@@ -28,7 +28,7 @@ A `todo-spec` annotation consists of a keyword, a description, and optional meta
 
 ### 2.1.1. Markdown Task Lists
 
-When a `todo-spec` annotation appears in a Markdown task list (`- [ ]` or `- [x]`), the format is modified.
+When a `taskspec` annotation appears in a Markdown task list (`- [ ]` or `- [x]`), the format is modified.
 
 ```markdown
 - [ ] <description> [metadata...]

@@ -1,14 +1,14 @@
-; todo-spec ABNF Grammar
+; taskspec ABNF Grammar
 ; Version 0.1.0-draft
 
-; This grammar defines the formal syntax for the todo-spec format.
+; This grammar defines the formal syntax for the taskspec format.
 ; It is intended for authors of parsers and other tooling.
 
 ; ------------------------------------------------------------------------------
 ; Top-Level Structure
 ; ------------------------------------------------------------------------------
 
-; A todo-spec entry is either a Markdown-style task or a generic keyword-led task.
+; A taskspec entry is either a Markdown-style task or a generic keyword-led task.
 todo-entry     = markdown-todo / generic-todo
 
 ; --- RULE 1: MARKDOWN TASK ---
