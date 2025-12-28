@@ -286,33 +286,6 @@ Popular Markdown task format using emojis. todo.spec:
 - Extends to work in source code comments
 - Provides text-only alternative syntax
 
-
-
----
-
-## Implementation Roadmap
-
-### Phase 1: Specification
-- [ ] Finalize core syntax
-- [ ] Write formal grammar (ABNF or PEG)
-- [ ] Document all fields and valid values
-- [ ] Create test suite with edge cases
-
-### Phase 2: Reference Implementation
-- [ ] Parser library (TypeScript/JavaScript)
-- [ ] CLI tool for basic operations
-- [ ] VSCode extension (syntax highlighting + TODO panel)
-
-### Phase 3: Ecosystem
-- [ ] GitHub Action for TODO linting
-- [ ] Integration modules (Linear, Jira, GitHub Issues)
-- [ ] Language-specific parsers (Python, Go, Rust)
-
-### Phase 4: Adoption
-- [ ] Documentation site
-- [ ] Publish as informational RFC or community standard
-- [ ] Seek adoption from tool vendors
-
 ---
 
 ## References
@@ -325,8 +298,3 @@ Popular Markdown task format using emojis. todo.spec:
 - [Obsidian Tasks](https://publish.obsidian.md/tasks/) – Markdown task plugin
 - [GFM Task Lists](https://github.github.com/gfm/#task-list-items-extension-) – GitHub task list syntax
 
----
-
-*Document Version: 0.1.0-draft*
-*Last Updated: 2025-12-28*
-*Authors: Simen A. W. Olsen, [Colleague Name]*
