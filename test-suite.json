@@ -226,7 +226,7 @@
   {
     "id": "passing-test-18",
     "description": "A valid TODO with an escaped tag in the description.",
-    "input": "TODO: This is about the \#backend team",
+    "input": "TODO: This is about the \\#backend team",
     "should_pass": true,
     "expected": {
       "description": "This is about the #backend team"
@@ -235,7 +235,7 @@
   {
     "id": "passing-test-19",
     "description": "A valid TODO with an escaped assignee in the description.",
-    "input": "TODO: Send a message to \@channel",
+    "input": "TODO: Send a message to \\@channel",
     "should_pass": true,
     "expected": {
       "description": "Send a message to @channel"
@@ -244,7 +244,7 @@
   {
     "id": "passing-test-20",
     "description": "A valid TODO with an escaped date emoji in the description.",
-    "input": "TODO: The date emoji is \📅",
+    "input": "TODO: The date emoji is \\📅",
     "should_pass": true,
     "expected": {
       "description": "The date emoji is 📅"
